@@ -7,3 +7,13 @@ html, body {
   height: 100%;
   background: #000;
 }
+
+.hotspot {
+  position: absolute;
+  cursor: pointer;
+}
+
+.link-hotspot-icon {
+  width: 32px;
+  height: 32px;
+}
