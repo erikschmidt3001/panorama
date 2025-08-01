@@ -6,17 +6,13 @@ APP_DATA.scenes.forEach(function(data) {
   var urlPrefix = "images/";
 
   var source = Marzipano.ImageUrlSource.fromString(
-    urlPrefix + "DJI_0001_D.JPG"
+    urlPrefix + data.id + ".JPG"
   );
 
   var geometry = new Marzipano.EquirectGeometry([{ width: 4000 }]);
 
-  var limiter = Marzipano.util.compose(
-    Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180),
-    Marzipano.RectilinearView.limit.yawPitch(120*Math.PI/180, 90*Math.PI/180)
-  );
 
-  var view = new Marzipano.RectilinearView(data.initialViewParameters, limiter);
+var view = new Marzipano.RectilinearView(data.initialViewParameters);
 
   var scene = viewer.createScene({
     source: source,
@@ -28,4 +24,4 @@ APP_DATA.scenes.forEach(function(data) {
   scenes[data.id] = scene;
 });
 
-scenes["scene1"].switchTo();
+scenes["ground-riihintupa"].switchTo();
