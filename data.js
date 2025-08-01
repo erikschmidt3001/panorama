@@ -27,8 +27,8 @@ var APP_DATA = {
           "target": "30m-riihintupa-northeast"
         },
         {
-          "yaw": -50 * Math.PI / 180, 
-          "pitch": -9 * Math.PI / 180,
+          "yaw": -44 * Math.PI / 180, 
+          "pitch": 6 * Math.PI / 180,
           "rotation": 0,
           "target": "ground-riihintupa-southeast"
         }
@@ -56,16 +56,22 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": 1.0, 
-          "pitch": -0.5,
+          "yaw": 55 * Math.PI / 180, 
+          "pitch": -25 * Math.PI / 180,
           "rotation": 0,
           "target": "ground-riihintupa-northeast"
         },
         {
-          "yaw": 0.6, 
-          "pitch": -1.1,
+          "yaw": 55 * Math.PI / 180, 
+          "pitch": -60 * Math.PI / 180,
           "rotation": 0,
           "target": "30m-riihintupa-northeast"
+        },
+        {
+          "yaw": 55 * Math.PI / 180, 
+          "pitch": -80 * Math.PI / 180,
+          "rotation": 0,
+          "target": "80m-riihintupa-northeast"
         }
       ],
       "infoHotspots": []
@@ -91,14 +97,60 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -0.3, 
-          "pitch": 1.2,
+          "yaw": 0 * Math.PI / 180, 
+          "pitch": 90 * Math.PI / 180,
           "rotation": 0,
           "target": "ground-riihintupa-northeast"
-        }
+        },
+        {
+          "yaw": 0 * Math.PI / 180, 
+          "pitch": -90 * Math.PI / 180,
+          "rotation": 0,
+          "target": "80m-riihintupa-northeast"
+        },
+        {
+          "yaw": -42 * Math.PI / 180, 
+          "pitch": 54 * Math.PI / 180,
+          "rotation": 0,
+          "target": "ground-riihintupa-southeast"
+        },
       ],
       "infoHotspots": []
-    }
+    },
+    {
+      "id": "80m-riihintupa-northeast",
+      "name": "Riihintupa - 80 meters - northeast",
+      "levels": [
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1500,
+      "initialViewParameters": {
+        "yaw": -20 * Math.PI / 180,
+        "pitch": 65 * Math.PI / 180,
+        "fov": 1.5708
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0 * Math.PI / 180, 
+          "pitch": 90 * Math.PI / 180,
+          "rotation": 0,
+          "target": "30m-riihintupa-northeast"
+        },
+        {
+          "yaw": -48 * Math.PI / 180, 
+          "pitch": 53.5 * Math.PI / 180,
+          "rotation": 0,
+          "target": "ground-riihintupa-southeast"
+        }],
+        "infoHotspots": []
+        }
   ],
   "name": "Riihiniemi",
   "settings": {
