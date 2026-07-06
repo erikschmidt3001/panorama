@@ -1,10 +1,10 @@
+var APP_DATA = {
   "scenes": [
     {
       "id": "30m-ground-riihintupa-southwest",
       "name": "Riihintupa Southwest - 30 meters",
       "levels": [
         {
-var APP_DATA = {
           "tileSize": 512,
           "size": 1024
         },
