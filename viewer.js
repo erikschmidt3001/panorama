@@ -38,7 +38,7 @@ APP_DATA.scenes.forEach(function(data) {
   var urlPrefix = "images/";
 
   var source = Marzipano.ImageUrlSource.fromString(
-    urlPrefix + data.id + ".JPG"
+    urlPrefix + data.id + ".jpeg"
   );
 
   var geometry = new Marzipano.EquirectGeometry([{ width: 6000 }]);
