@@ -185,20 +185,7 @@ var APP_DATA = {
         "pitch": 1 * Math.PI/180,
         "fov": 1.5708
       },
-      "linkHotspots": [
-        {
-          "yaw": 2.0,
-          "pitch": 0.0,
-          "rotation": 0,
-          "target": "ground-riihintupa-northwest"
-        },
-        {
-          "yaw": -1.5,
-          "pitch": 0.0,
-          "rotation": 0,
-          "target": "ground-riihintupa-roof"
-        }
-      ],
+      "linkHotspots": [],
       "infoHotspots": []
     },
     {
@@ -210,14 +197,7 @@ var APP_DATA = {
       ],
       "faceSize": 1500,
       "initialViewParameters": { "yaw": 0.0, "pitch": 0.0, "fov": 1.5708 },
-      "linkHotspots": [
-        {
-          "yaw": -2.0,
-          "pitch": 0.0,
-          "rotation": 0,
-          "target": "ground-riihintupa-northeast"
-        }
-      ],
+      "linkHotspots": [],
       "infoHotspots": []
     },
     {
@@ -229,14 +209,7 @@ var APP_DATA = {
       ],
       "faceSize": 1500,
       "initialViewParameters": { "yaw": 0.0, "pitch": 0.0, "fov": 1.5708 },
-      "linkHotspots": [
-        {
-          "yaw": 1.5,
-          "pitch": 0.0,
-          "rotation": 0,
-          "target": "ground-riihintupa-northeast"
-        }
-      ],
+      "linkHotspots": [],
       "infoHotspots": []
     },
     {
