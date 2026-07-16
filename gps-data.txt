@@ -12,8 +12,6 @@ ground-riihintupa-roof
 {{"2025:07:31 10:22:27"},"Latitude":62.137883333333335,"Altitude":209.94800000000001,"Longitude":24.144111166666665,"LongitudeRef":"E","LatitudeRef":"N","MapDatum":"WGS-84"}
 ground-island
 {{"2025:07:31 10:19:51"},"Latitude":62.137875000000001,"Altitude":130.648,"Longitude":24.144100000000002,"LongitudeRef":"E","LatitudeRef":"N","MapDatum":"WGS-84"}
-hotspot
-{"PixelWidth":1610,"DPIWidth":200,"ColorModel":"RGB","PixelHeight":1610,"Depth":8,"HasAlpha":true,"{PNG}":{"InterlaceType":0,"Software":"www.inkscape.org","XPixelsPerMeter":7874,"YPixelsPerMeter":7874},"DPIHeight":200}
 30m-riihintupa-bay
 {{"2025:07:31 12:21:06"},"Latitude":62.137475000000002,"Altitude":162.191,"Longitude":24.145158333333335,"LongitudeRef":"E","LatitudeRef":"N","MapDatum":"WGS-84"}
 ground-riihintupa-bay
@@ -32,7 +30,5 @@ ground-riihintupa-northwest
 {{"2025:07:31 12:19:40"},"Latitude":62.137561166666664,"Altitude":137.691,"Longitude":24.145861166666666,"LongitudeRef":"E","LatitudeRef":"N","MapDatum":"WGS-84"}
 ground-riihintupa-southeast
 {{"2025:07:31 10:13:55"},"Latitude":62.1374195,"Altitude":132.44800000000001,"Longitude":24.146097166666667,"LongitudeRef":"E","LatitudeRef":"N","MapDatum":"WGS-84"}
-80m-bay
-{{"2025:08:03 10:46:49"},"Latitude":62.139241666666663,"Altitude":118.057,"Longitude":24.148891666666668,"LongitudeRef":"E","LatitudeRef":"N","MapDatum":"WGS-84"}
 ground-riihintupa-beach
 {{"2025:07:31 10:23:48"},"Latitude":62.1382555,"Altitude":131.44800000000001,"Longitude":24.144861166666665,"LongitudeRef":"E","LatitudeRef":"N","MapDatum":"WGS-84"}

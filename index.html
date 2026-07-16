@@ -1,13 +1,528 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-  <title>Riihiniemi Panorama</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 600px;
+        height: 400px;
+    }
+    </style>
 </head>
 <body>
-  <div id="pano"></div>
-  <script src="marzipano/marzipano.js"></script>
-  <script src="data.js"></script>
-  <script src="viewer.js"></script>
+
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {
+    "default": {
+        "firstScene": "ground-riihintupa-northeast",
+        "autoLoad": true,
+        "author": "Erik Schmidt",
+        "sceneFadeDuration": 1000
+    },
+
+    "scenes": {
+        "ground-riihintupa-northeast": {
+            "title": "Riihintupa-Northeast",
+            "hfov": 110,
+            "pitch": 10,
+            "yaw": 350,
+            "type": "equirectangular",
+            "panorama": "/images/ground-riihintupa-northeast.jpeg",
+            "hotSpots": [
+                {
+                    "pitch": 20,
+                    "yaw": 340,
+                    "type": "scene",
+                    "text": "Riihintupa-Roof",
+                    "sceneId": "ground-riihintupa-roof"
+                },
+                {
+                    "pitch": 89.1,
+                    "yaw": -26.4,
+                    "type": "scene",
+                    "text": "Riihintupa-Northeast (30m)",
+                    "sceneId": "30m-riihintupa-northeast"
+                },
+                {
+                    "pitch": -7.8,
+                    "yaw": -131.8,
+                    "type": "scene",
+                    "text": "Riihintupa-Southeast",
+                    "sceneId": "ground-riihintupa-southeast"
+                },
+                {
+                    "pitch": 7.4,
+                    "yaw": -76.8,
+                    "type": "scene",
+                    "text": "Riihintupa-Northwest",
+                    "sceneId": "ground-riihintupa-northwest"
+                },
+                {
+                    "pitch": -3.4,
+                    "yaw": -86.1,
+                    "type": "scene",
+                    "text": "Riihintupa-Bay",
+                    "sceneId": "ground-riihintupa-bay"
+                }
+            ]
+        },
+        "ground-riihintupa-roof": {
+            "title": "Riihintupa-Roof",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "/images/ground-riihintupa-roof.jpeg",
+            "hotSpots": [
+                {
+                    "pitch": -0.6,
+                    "yaw": 37.1,
+                    "type": "scene",
+                    "text": "Riihintupa-Northeast",
+                    "sceneId": "ground-riihintupa-northeast",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+                {
+                    "pitch": -52.4,
+                    "yaw": 113.1,
+                    "type": "scene",
+                    "text": "Riihintupa-Southeast",
+                    "sceneId": "ground-riihintupa-southeast"
+                },
+                {
+                    "pitch": -33.4,
+                    "yaw": -13.8,
+                    "type": "scene",
+                    "text": "Riihintupa-Northwest",
+                    "sceneId": "ground-riihintupa-northwest"
+                },
+                {
+                    "pitch": -22.3,
+                    "yaw": -73.7,
+                    "type": "scene",
+                    "text": "Riihintupa-Bay",
+                    "sceneId": "ground-riihintupa-bay"
+                }
+            ]
+        },
+        "ground-riihintupa-southeast": {
+            "title": "Riihintupa-Southeast",
+            "hfov": 110,
+            "pitch": 0,
+            "yaw": -67,
+            "type": "equirectangular",
+            "panorama": "/images/ground-riihintupa-southeast.jpeg",
+            "hotSpots": [
+                {
+                    "pitch": 52.4,
+                    "yaw": -66.9,
+                    "type": "scene",
+                    "text": "Riihintupa-Roof",
+                    "sceneId": "ground-riihintupa-roof"
+                },
+                {
+                    "pitch": 7.8,
+                    "yaw": 48.2,
+                    "type": "scene",
+                    "text": "Riihintupa-Northeast",
+                    "sceneId": "ground-riihintupa-northeast"
+                },
+                {
+                    "pitch": -14.7,
+                    "yaw": 142.1,
+                    "type": "scene",
+                    "text": "Riihintupa-Northwest",
+                    "sceneId": "ground-riihintupa-northwest"
+                },
+                {
+                    "pitch": 1.5,
+                    "yaw": 107.9,
+                    "type": "scene",
+                    "text": "Riihintupa-Bay",
+                    "sceneId": "ground-riihintupa-bay"
+                }
+            ]
+        },
+        "ground-riihintupa-northwest": {
+            "title": "Riihintupa-Northwest",
+            "hfov": 110,
+            "pitch": 0,
+            "yaw": 166,
+            "type": "equirectangular",
+            "panorama": "/images/ground-riihintupa-northwest.jpeg",
+            "hotSpots": [
+                {
+                    "pitch": 33.4,
+                    "yaw": 166.2,
+                    "type": "scene",
+                    "text": "Riihintupa-Roof",
+                    "sceneId": "ground-riihintupa-roof"
+                },
+                {
+                    "pitch": -11.7,
+                    "yaw": -93.4,
+                    "type": "scene",
+                    "text": "Riihintupa-Bay",
+                    "sceneId": "ground-riihintupa-bay"
+                },
+                {
+                    "pitch": -7.4,
+                    "yaw": 103.2,
+                    "type": "scene",
+                    "text": "Riihintupa-Northeast",
+                    "sceneId": "ground-riihintupa-northeast"
+                },
+                {
+                    "pitch": -14.7,
+                    "yaw": -37.9,
+                    "type": "scene",
+                    "text": "Riihintupa-Southeast",
+                    "sceneId": "ground-riihintupa-southeast"
+                }
+            ]
+        },
+        "ground-riihintupa-bay": {
+            "title": "Riihintupa-Bay",
+            "hfov": 110,
+            "pitch": 0,
+            "yaw": 87,
+            "type": "equirectangular",
+            "panorama": "/images/ground-riihintupa-bay.jpeg",
+            "hotSpots": [
+                {
+                    "pitch": 11.7,
+                    "yaw": 86.6,
+                    "type": "scene",
+                    "text": "Riihintupa-Northwest",
+                    "sceneId": "ground-riihintupa-northwest"
+                },
+                {
+                    "pitch": -0.3,
+                    "yaw": -53.3,
+                    "type": "scene",
+                    "text": "Riihintupa-Lake",
+                    "sceneId": "ground-riihintupa-lake"
+                },
+                {
+                    "pitch": 72.8,
+                    "yaw": -143.9,
+                    "type": "scene",
+                    "text": "Riihintupa-Bay (30m)",
+                    "sceneId": "30m-riihintupa-bay"
+                },
+                {
+                    "pitch": 22.3,
+                    "yaw": 106.3,
+                    "type": "scene",
+                    "text": "Riihintupa-Roof",
+                    "sceneId": "ground-riihintupa-roof"
+                },
+                {
+                    "pitch": 3.4,
+                    "yaw": 93.9,
+                    "type": "scene",
+                    "text": "Riihintupa-Northeast",
+                    "sceneId": "ground-riihintupa-northeast"
+                },
+                {
+                    "pitch": 1.5,
+                    "yaw": 107.9,
+                    "type": "scene",
+                    "text": "Riihintupa-Southeast",
+                    "sceneId": "ground-riihintupa-southeast"
+                }
+            ]
+        },
+        "ground-riihintupa-lake": {
+            "title": "Riihintupa-Lake",
+            "hfov": 110,
+            "pitch": 0,
+            "yaw": 127,
+            "type": "equirectangular",
+            "panorama": "/images/ground-riihintupa-lake.jpeg",
+            "hotSpots": [
+                {
+                    "pitch": 0.3,
+                    "yaw": 126.7,
+                    "type": "scene",
+                    "text": "Riihintupa-Bay",
+                    "sceneId": "ground-riihintupa-bay"
+                },
+                {
+                    "pitch": -0.7,
+                    "yaw": -64.4,
+                    "type": "scene",
+                    "text": "Island",
+                    "sceneId": "ground-island"
+                },
+                {
+                    "pitch": 0.4,
+                    "yaw": 7.9,
+                    "type": "scene",
+                    "text": "Riihintupa-Beach",
+                    "sceneId": "ground-riihintupa-beach"
+                }
+            ]
+        },
+        "ground-island": {
+            "title": "Island",
+            "hfov": 110,
+            "pitch": 0,
+            "yaw": 116,
+            "type": "equirectangular",
+            "panorama": "/images/ground-island.jpeg",
+            "hotSpots": [
+                {
+                    "pitch": 0.7,
+                    "yaw": 115.6,
+                    "type": "scene",
+                    "text": "Riihintupa-Lake",
+                    "sceneId": "ground-riihintupa-lake"
+                },
+                {
+                    "pitch": 0.8,
+                    "yaw": 43.1,
+                    "type": "scene",
+                    "text": "Riihintupa-Beach",
+                    "sceneId": "ground-riihintupa-beach"
+                },
+                {
+                    "pitch": 87.3,
+                    "yaw": 25.0,
+                    "type": "scene",
+                    "text": "Island (30m)",
+                    "sceneId": "30m-island"
+                }
+            ]
+        },
+        "ground-riihintupa-beach": {
+            "title": "Riihintupa-Beach",
+            "hfov": 110,
+            "pitch": 0,
+            "yaw": -137,
+            "type": "equirectangular",
+            "panorama": "/images/ground-riihintupa-beach.jpeg",
+            "hotSpots": [
+                {
+                    "pitch": -0.8,
+                    "yaw": -136.9,
+                    "type": "scene",
+                    "text": "Island",
+                    "sceneId": "ground-island"
+                },
+                {
+                    "pitch": 89.3,
+                    "yaw": 23.7,
+                    "type": "scene",
+                    "text": "Riihintupa-Beach (30m)",
+                    "sceneId": "30m-riihintupa-beach"
+                },
+                {
+                    "pitch": -0.4,
+                    "yaw": -172.1,
+                    "type": "scene",
+                    "text": "Riihintupa-Lake",
+                    "sceneId": "ground-riihintupa-lake"
+                }
+            ]
+        },
+        "30m-riihintupa-northeast": {
+            "title": "Riihintupa-Northeast (30m)",
+            "hfov": 110,
+            "pitch": 0,
+            "yaw": 155,
+            "type": "equirectangular",
+            "panorama": "/images/30m-riihintupa-northeast.jpeg",
+            "hotSpots": [
+                {
+                    "pitch": -89.1,
+                    "yaw": 153.6,
+                    "type": "scene",
+                    "text": "Riihintupa-Northeast",
+                    "sceneId": "ground-riihintupa-northeast"
+                },
+                {
+                    "pitch": 11.6,
+                    "yaw": -47.7,
+                    "type": "scene",
+                    "text": "Riihintupa-Northeast 2 (30m)",
+                    "sceneId": "30m-riihintupa-northeast-2"
+                }
+            ]
+        },
+        "30m-riihintupa-northeast-2": {
+            "title": "Riihintupa-Northeast 2 (30m)",
+            "hfov": 110,
+            "pitch": 0,
+            "yaw": 132,
+            "type": "equirectangular",
+            "panorama": "/images/30m-riihintupa-northeast-2.jpeg",
+            "hotSpots": [
+                {
+                    "pitch": -11.6,
+                    "yaw": 132.3,
+                    "type": "scene",
+                    "text": "Riihintupa-Northeast (30m)",
+                    "sceneId": "30m-riihintupa-northeast"
+                },
+                {
+                    "pitch": 87.8,
+                    "yaw": 79.5,
+                    "type": "scene",
+                    "text": "Riihintupa-Northeast (80m)",
+                    "sceneId": "80m-riihintupa-northeast"
+                }
+            ]
+        },
+        "80m-riihintupa-northeast": {
+            "title": "Riihintupa-Northeast (80m)",
+            "hfov": 110,
+            "pitch": 0,
+            "yaw": 143,
+            "type": "equirectangular",
+            "panorama": "/images/80m-riihintupa-northeast.jpeg",
+            "hotSpots": [
+                {
+                    "pitch": -87.8,
+                    "yaw": -100.5,
+                    "type": "scene",
+                    "text": "Riihintupa-Northeast 2 (30m)",
+                    "sceneId": "30m-riihintupa-northeast-2"
+                }
+            ]
+        },
+        "30m-riihintupa-bay": {
+            "title": "Riihintupa-Bay (30m)",
+            "hfov": 110,
+            "pitch": 0,
+            "yaw": 36,
+            "type": "equirectangular",
+            "panorama": "/images/30m-riihintupa-bay.jpeg",
+            "hotSpots": [
+                {
+                    "pitch": -72.8,
+                    "yaw": 36.1,
+                    "type": "scene",
+                    "text": "Riihintupa-Bay",
+                    "sceneId": "ground-riihintupa-bay"
+                },
+                {
+                    "pitch": 89.5,
+                    "yaw": -42.2,
+                    "type": "scene",
+                    "text": "Riihintupa-Bay (80m)",
+                    "sceneId": "80m-riihintupa-bay"
+                }
+            ]
+        },
+        "80m-riihintupa-bay": {
+            "title": "Riihintupa-Bay (80m)",
+            "hfov": 110,
+            "pitch": 0,
+            "yaw": 138,
+            "type": "equirectangular",
+            "panorama": "/images/80m-riihintupa-bay.jpeg",
+            "hotSpots": [
+                {
+                    "pitch": -89.5,
+                    "yaw": 137.8,
+                    "type": "scene",
+                    "text": "Riihintupa-Bay (30m)",
+                    "sceneId": "30m-riihintupa-bay"
+                },
+                {
+                    "pitch": 90,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Riihintupa-Bay (120m)",
+                    "sceneId": "120m-riihintupa-bay"
+                }
+            ]
+        },
+        "120m-riihintupa-bay": {
+            "title": "Riihintupa-Bay (120m)",
+            "hfov": 110,
+            "pitch": 0,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "/images/120m-riihintupa-bay.jpeg",
+            "hotSpots": [
+                {
+                    "pitch": -90,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Riihintupa-Bay (80m)",
+                    "sceneId": "80m-riihintupa-bay"
+                }
+            ]
+        },
+        "30m-island": {
+            "title": "Island (30m)",
+            "hfov": 110,
+            "pitch": 0,
+            "yaw": -155,
+            "type": "equirectangular",
+            "panorama": "/images/30m-island.jpeg",
+            "hotSpots": [
+                {
+                    "pitch": -87.3,
+                    "yaw": -155.0,
+                    "type": "scene",
+                    "text": "Island",
+                    "sceneId": "ground-island"
+                },
+                {
+                    "pitch": 89.6,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Island (80m)",
+                    "sceneId": "80m-island"
+                }
+            ]
+        },
+        "80m-island": {
+            "title": "Island (80m)",
+            "hfov": 110,
+            "pitch": 0,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "/images/80m-island.jpeg",
+            "hotSpots": [
+                {
+                    "pitch": -89.6,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Island (30m)",
+                    "sceneId": "30m-island"
+                }
+            ]
+        },
+        "30m-riihintupa-beach": {
+            "title": "Riihintupa-Beach (30m)",
+            "hfov": 110,
+            "pitch": 0,
+            "yaw": -156,
+            "type": "equirectangular",
+            "panorama": "/images/30m-riihintupa-beach.jpeg",
+            "hotSpots": [
+                {
+                    "pitch": -89.3,
+                    "yaw": -156.3,
+                    "type": "scene",
+                    "text": "Riihintupa-Beach",
+                    "sceneId": "ground-riihintupa-beach"
+                }
+            ]
+        }
+
+    }
+});
+</script>
+
 </body>
 </html>
